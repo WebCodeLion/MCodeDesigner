@@ -101,15 +101,15 @@ body {
     font-family: 'LatoLatin-Bold';
 }
 a, a:visited { /* порядок правил для ссылок имеет значение */
-	color: #7edfcf;
+	color: #fff;
 	text-decoration: underline;
 }
 a:hover {
-	color: #7edfcf;
+	color: #fff;
 	text-decoration:none;
 }
 a:focus, a:active {
-	color: #7edfcf;
+	color: #fff
 	text-decoration: underline;
 }
 h1, h2, h3, h4, h5, h6{
