@@ -1,0 +1,317 @@
+@font-face {
+  font-family: 'LatoLatin-Black';
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoLatin-Bold';
+  src: url('../libs/font-lato/LatoLatin-Bold.eot') format('embedded-opentype'),  url('../libs/font-lato/LatoLatin-Bold.woff') format('woff'), url('../libs/font-lato/LatoLatin-Bold.ttf')  format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoLatin-Heavy';
+  src: url('../libs/font-lato/LatoLatin-Heavy.eot') format('embedded-opentype'),  url('../libs/font-lato/LatoLatin-Heavy.woff') format('woff'), url('../libs/font-lato/LatoLatin-Heavy.ttf')  format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoLatin-Medium';
+  src: url('../libs/font-lato/LatoLatin-Medium.eot') format('embedded-opentype'),  url('../libs/font-lato/LatoLatin-Medium.woff') format('woff'), url('../libs/font-lato/LatoLatin-Medium.ttf')  format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoLatin-Regular';
+  src: url('../libs/font-lato/LatoLatin-Regular.eot') format('embedded-opentype'),  url('../libs/font-lato/LatoLatin-Regular.woff') format('woff'), url('../libs/font-lato/LatoLatin-Regular.ttf')  format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #222;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+    font-family: 'LatoLatin-Bold';
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #7edfcf;
+	text-decoration: underline;
+}
+a:hover {
+	color: #7edfcf;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #7edfcf;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+header {
+    background-color: #262626;
+    overflow: hidden;
+}
+
+.center-block-header{
+	max-width: 1170px; 
+	margin:0 auto;
+	padding: 0 30px 0 30px;
+	overflow: hidden;
+}
+
+.header-top {
+    margin: 15px 0 10px 0;
+    overflow: hidden;
+    border-bottom: 2px solid #595959;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0 0 7px 0;
+}
+
+.header-top p {
+    margin:5px  40px 0 0;
+}
+
+.fa-user, .fa-cart-plus, .fa-check-circle {
+	color: #dc3749;
+	margin-right: 5px;
+}
+
+.fa-search {
+	color: #fff;
+	margin-right: 10px;
+	padding-left: 30px;
+	border-left: 2px solid #595959;
+}
+
+.search {
+	font-size: 1.5625em;
+}
+
+.header-top p a {
+	color: #dc3749;
+	text-decoration: none;
+	font-size: 0.875em;
+	font-family: 'LatoLatin-Regular';
+}
+
+.header-top p a:hover {
+	text-decoration: underline;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: ;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+a.logo  {
+	color: #fff;
+	font-family: 'LatoLatin-Black';
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.logo-one {
+    font-size: 2.8125em;
+}
+
+.logo-two {
+	color: #dc3749;
+	letter-spacing: 1px;
+	font-size: 2.8125em;
+}
+
+.pod-logo  {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.9375em;
+	font-family: 'LatoLatin-Regular';
+	text-decoration: none;
+	letter-spacing: 4.5px;
+}
+
+.block-right {
+   display: flex;
+ flex-grow: 3;
+ justify-content: flex-end;
+
+}
+
+.block-one {
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+}
+
+.block-one h2 {
+    color: #fff;
+    font-size: 1.25em;
+    margin-top: 4px;
+    margin-bottom: 19px;
+}
+
+.block-one i {
+	font-size: 1.5em;
+}
+
+.fa-mobile {
+    color: #dc3749;
+    padding-right: 15px;
+}
+
+.block-one p {
+    color: #919191;
+    text-transform: uppercase;
+    font-family: 'LatoLatin-Regular';
+    font-size: 0.875em;
+}
+
+.block-two {
+	display: flex;
+	margin-left: 50px;
+}
+
+.block-two p {
+	font-size: 0.9375em;
+	border-left: 2px solid #595959;
+	margin-left: 20px;
+	padding-left: 20px;
+}
+
+.block-two a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.block-two a:hover {
+	text-decoration: underline;
+}
+
+.block-two i {
+    color: #dc3749;
+    font-size: 1.5625em;
+    padding-top: 10px;
+    padding-bottom: 21px;
+    padding-left: 20px;
+}
+
+.navigation-header {
+	background:#0b0b0b;
+padding: 20px 0 20px 0;
+}
+
+.menu {
+	max-width: 1170px; 
+	margin:0 auto;
+	padding: 0 30px 0 30px;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu li {
+	margin-right: 40px;
+}
+
+.menu li a {
+	font-size: 0.9375em;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.menu li a:hover {
+	color: #dc3749;
+	transition: 0.4s;
+}
+
+.header-img img{
+ width: 100%;
+ height: 100%;
+ margin-bottom: -5px;
+}
