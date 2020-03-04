@@ -100,18 +100,7 @@ body {
 	min-height:100%;
     font-family: 'LatoLatin-Bold';
 }
-a, a:visited { /* порядок правил для ссылок имеет значение */
-	color: #fff;
-	text-decoration: underline;
-}
-a:hover {
-	color: #fff;
-	text-decoration:none;
-}
-a:focus, a:active {
-	color: #fff
-	text-decoration: underline;
-}
+
 h1, h2, h3, h4, h5, h6{
 	font-weight:normal;
 }
