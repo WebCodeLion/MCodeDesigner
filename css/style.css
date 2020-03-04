@@ -170,7 +170,6 @@ header {
 
 .header-bottom {
     display: flex;
-    justify-content: ;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
