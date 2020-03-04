@@ -1,5 +1,6 @@
 @font-face {
   font-family: 'LatoLatin-Black';
+  src: url('../libs/font-lato/LatoLatin-Black.eot') format('embedded-opentype'),  url('../libs/font-lato/LatoLatin-Black.woff') format('woff'), url('../libs/font-lato/LatoLatin-Black.ttf')  format('truetype');
   font-weight: 900;
   font-style: normal;
 }
