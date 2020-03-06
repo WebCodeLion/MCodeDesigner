@@ -393,21 +393,21 @@ text-decoration: none;
 
 .products-link .link:hover:first-child {
 	background-color: rgba(108,107,107,.3);
-	transition: 0.3s;
+	transition: 0.6s;
 }
 
 .products-link .link:hover:nth-child(2) {
 	background-color: rgba(0,0,0,.3);
-	transition: 0.3s;
+	transition: 0.6s;
 }
 .products-link .link:hover:nth-child(3) {
 	background-color: rgba(0,0,0,.3);
-	transition: 0.3s;
+	transition: 0.6s;
 }
 
 .products-link .link:hover:last-child {
 	background-color: rgba(108,107,107,.3);
-	transition: 0.3s;
+	transition: 0.6s;
 }
 
 .products-link .link:hover h2{
