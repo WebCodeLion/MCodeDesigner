@@ -353,7 +353,7 @@ text-decoration: none;
 	color: #fff;
 	font-size: 2.1875em;
 	letter-spacing: 2px;
-	margin: 0 0 15px 40px;
+	margin: 0 0 15px 30px;
 	text-transform: uppercase;
 	transition: 0.5s;
 
@@ -361,9 +361,9 @@ text-decoration: none;
 
 .products-link .link p {
 	color: #959494;
-	font-size: 1.2em;
+	font-size: 1em;
 	font-family: 'LatoLatin-Medium';
-	margin: 0 0 0 40px;
+	margin: 0 0 0 30px;
 	transition: 0.5s;
 }
 
