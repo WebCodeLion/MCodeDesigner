@@ -269,7 +269,6 @@ a.logo  {
 
 .navigation-header {
 	background:#0b0b0b;
-	/*padding: 20px 0 20px 0;*/
 }
 
 .menu {
@@ -305,12 +304,121 @@ a.logo  {
  margin-bottom: -5px;
 }
 
+.block-main {
+	background:#0b0b0b;
+	margin-bottom: 80px;
+    overflow: hidden;
+}
+
+.center-block-main{
+	max-width: 1600px; 
+	margin:0 auto;
+	overflow: hidden;
+	outline: 0px solid red;
+	background: #222222;
+	overflow: hidden;
+}
+
+.products-link {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+.products-link .link {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width:50%;
+overflow: hidden;
+text-decoration: none;
+
+}
+
+.products-link .link:first-child {
+     background: #333333;
+}
+
+.products-link .link:last-child {
+     background: #333333;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+}
+
+.products-link .link h2 {
+	color: #fff;
+	font-size: 2.1875em;
+	letter-spacing: 2px;
+	margin: 0 0 15px 40px;
+	text-transform: uppercase;
+	transition: 0.3s;
+
+}
+
+.products-link .link p {
+	color: #959494;
+	font-size: 1.2em;
+	font-family: 'LatoLatin-Medium';
+	margin: 0 0 0 40px;
+	transition: 0.3s;
+}
 
 
+.products-link .link img {
+	overflow: hidden;
+	padding-top: 70px;
+	padding-left: 10px;
+	transition: 0.3s;
+}
 
+.lamp {
+	padding-bottom: 10px;
+}
 
+.brakes {
+	padding: 0 30px 0 0;
+}
 
+.wheels {
+	padding: 0 20px 40px 0 ;
+}
 
+.car-seat {
+	margin: -20px 0 0 0;
+	padding: 0 50px 20px 0;
+}
 
+.products-link .link:hover:first-child {
+	background-color: rgba(108,107,107,.3);
+	transition: 0.3s;
+}
 
+.products-link .link:hover:nth-child(2) {
+	background-color: rgba(0,0,0,.3);
+	transition: 0.3s;
+}
+.products-link .link:hover:nth-child(3) {
+	background-color: rgba(0,0,0,.3);
+	transition: 0.3s;
+}
 
+.products-link .link:hover:last-child {
+	background-color: rgba(108,107,107,.3);
+	transition: 0.3s;
+}
+
+.products-link .link:hover h2{
+	color: #dc3749;
+}
+
+.products-link .link:hover p {
+	color: #dc3749;
+}
+
+.products-link .link:hover img {
+	transform: scale(1.2);
+}
