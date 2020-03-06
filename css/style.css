@@ -412,11 +412,11 @@ text-decoration: none;
 }
 
 .products-link .link:hover h2{
-	color: #fff;
+	color: #dc3749;
 }
 
 .products-link .link:hover p {
-	color: #dc3749;
+	color: #fff;
 }
 
 .products-link .link:hover img {
