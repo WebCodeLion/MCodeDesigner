@@ -415,7 +415,7 @@ section {
 	max-width: 1400px; 
 	margin:0 auto;
 	overflow: hidden;
-	outline: 1px solid red;
+	outline: 0px solid red;
 	overflow: hidden;
 	padding: 0 30px;
 }
