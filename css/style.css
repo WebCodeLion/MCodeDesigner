@@ -870,6 +870,14 @@ footer {
 	padding-right: 10px;
 }
 
+a.tel {
+	text-decoration: none;
+	 font-size: 0.9375em;
+	font-family: 'LatoLatin-Regular';
+	color: #595959;
+	
+}
+
 .footer-bottom {
 	display: flex;
 	align-items: center;
